@@ -1,0 +1,21 @@
+
+node(‘serveur de compilation’) { 
+
+   stage(‘check java’) {     
+
+                            sh « java -version »
+
+    }
+    stage(‘checkout’) {
+
+                            checkout scm
+
+        }      
+
+stage(‘packaging BACKEND’) {
+
+            sh « cd ./my_project && ./mvnw -Pprod clean verify sonar:sonar »
+
+ }
+
+}
