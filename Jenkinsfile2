@@ -1,5 +1,5 @@
 
-node(‘serveur de compilation’) { 
+node none { 
 
    stage(‘check java’) {     
 
