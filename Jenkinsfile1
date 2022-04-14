@@ -6,7 +6,7 @@ pipeline {
    stages {
     stage('Scan') {
       steps {
-        withSonarQubeEnv(installationName: 'Calculateur-OBJ54') {
+        withSonarQubeEnv(installationName: 'Calculator-OBJ54') {
           sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
         }
       }
