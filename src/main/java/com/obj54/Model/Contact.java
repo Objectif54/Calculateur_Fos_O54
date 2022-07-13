@@ -6,58 +6,71 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity // This tells Hibernate to make a table out of this class
-
 public class Contact {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idContact;
-
-    private String nameContact;
-
-    private String lastNameContact;
-
-    private String numContact;
-
+    private String nomContact;
+    private String prenomContact;
+    private String numeroContact;
     private String mailContact;
+    private String posteContact;
+    private Integer contactPrincipale;
 
-    public Integer getId() {
+    public Integer getIdContact() {
         return idContact;
     }
     
-    public void setId(Integer idContact) {
+      public void setIdContact(Integer idContact) {
         this.idContact = idContact;
     }
 
-    public String getNameContact() {
-        return nameContact;
+    public String getNomContact() {
+        return nomContact;
+    }
+    
+      public void setNomContact(String nomContact) {
+        this.nomContact = nomContact;
     }
 
-    public void setNameContact(String nameContact) {
-        this.nameContact = nameContact;
+    public String getPrenomContact() {
+        return prenomContact;
+    }
+    
+      public void setPrenomContact(String prenomContact) {
+        this.prenomContact = prenomContact;
     }
 
-    public String getLastNameContact() {
-        return lastNameContact;
+    public String getNumeroContact() {
+        return numeroContact;
     }
-
-    public void setLastNameContact(String lastNameContact) {
-        this.lastNameContact = lastNameContact;
-    }
-
-    public String getNumContact() {
-        return numContact;
-    }
-
-    public void setNumContact(String numContact) {
-        this.numContact = numContact;
+    
+      public void setNumeroContact(String numeroContact) {
+        this.numeroContact = numeroContact;
     }
 
     public String getMailContact() {
         return mailContact;
     }
-
-    public void setMailContact(String mailContact) {
+    
+      public void setMailContact(String mailContact) {
         this.mailContact = mailContact;
+    }
+
+    public String getPosteContact() {
+        return posteContact;
+    }
+    
+      public void setPosteContact(String posteContact) {
+        this.posteContact = posteContact;
+    }
+
+    public Integer getContactPrincipale() {
+        return contactPrincipale;
+    }
+    
+      public void setContactPrincipale(Integer contactPrincipale) {
+        this.contactPrincipale = contactPrincipale;
     }
 
 }
