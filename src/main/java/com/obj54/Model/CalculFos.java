@@ -10,7 +10,7 @@ public class CalculFos {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private Integer idCalculFos;
+    private Integer id_calcul_fos;
     private String info1;
     private String info2;
     private String info3;
@@ -19,11 +19,11 @@ public class CalculFos {
     private Integer chiffre2;
 
     public Integer getId() {
-        return idCalculFos;
+        return id_calcul_fos;
     }
 
-    public void setId(Integer idCalculFos) {
-        this.idCalculFos = idCalculFos;
+    public void setId(Integer id_calcul_fos) {
+        this.id_calcul_fos = id_calcul_fos;
     }
 
     public String getInfoUn() {

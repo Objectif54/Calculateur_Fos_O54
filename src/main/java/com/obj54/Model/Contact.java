@@ -9,68 +9,68 @@ import javax.persistence.Id;
 public class Contact {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idContact;
-    private String nomContact;
-    private String prenomContact;
-    private String numeroContact;
-    private String mailContact;
-    private String posteContact;
-    private Integer contactPrincipale;
+    private Integer id_contact;
+    private String nom_contact;
+    private String prenom_contact;
+    private String numero_contact;
+    private String mail_contact;
+    private String poste_contact;
+    private Integer contact_principale;
 
     public Integer getIdContact() {
-        return idContact;
+        return id_contact;
     }
     
-      public void setIdContact(Integer idContact) {
-        this.idContact = idContact;
+      public void setIdContact(Integer id_contact) {
+        this.id_contact = id_contact;
     }
 
     public String getNomContact() {
-        return nomContact;
+        return nom_contact;
     }
     
-      public void setNomContact(String nomContact) {
-        this.nomContact = nomContact;
+      public void setNomContact(String nom_contact) {
+        this.nom_contact = nom_contact;
     }
 
     public String getPrenomContact() {
-        return prenomContact;
+        return prenom_contact;
     }
     
-      public void setPrenomContact(String prenomContact) {
-        this.prenomContact = prenomContact;
+      public void setPrenomContact(String prenom_contact) {
+        this.prenom_contact = prenom_contact;
     }
 
     public String getNumeroContact() {
-        return numeroContact;
+        return numero_contact;
     }
     
-      public void setNumeroContact(String numeroContact) {
-        this.numeroContact = numeroContact;
+      public void setNumeroContact(String numero_contact) {
+        this.numero_contact = numero_contact;
     }
 
     public String getMailContact() {
-        return mailContact;
+        return mail_contact;
     }
     
-      public void setMailContact(String mailContact) {
-        this.mailContact = mailContact;
+      public void setMailContact(String mail_contact) {
+        this.mail_contact = mail_contact;
     }
 
     public String getPosteContact() {
-        return posteContact;
+        return poste_contact;
     }
     
-      public void setPosteContact(String posteContact) {
-        this.posteContact = posteContact;
+      public void setPosteContact(String poste_contact) {
+        this.poste_contact = poste_contact;
     }
 
     public Integer getContactPrincipale() {
-        return contactPrincipale;
+        return contact_principale;
     }
     
-      public void setContactPrincipale(Integer contactPrincipale) {
-        this.contactPrincipale = contactPrincipale;
+      public void setContactPrincipale(Integer contact_principale) {
+        this.contact_principale = contact_principale;
     }
 
 }

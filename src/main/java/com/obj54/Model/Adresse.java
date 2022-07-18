@@ -10,67 +10,67 @@ public class Adresse {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO) 
     
-    private Integer idAdresse;
-    private String nomCommune;
-    private Integer codePostale;
-    private String nomDepartement;
-    private String numeroDepartement;
-    private String nomAdresse;
-    private String complementAdresse;
+    private Integer id_adresse;
+    private String nom_commune;
+    private Integer code_postale;
+    private String nom_departement;
+    private String numero_departement;
+    private String nom_adresse;
+    private String complement_adresse;
 
     public Integer getId() {
-        return idAdresse;
+        return id_adresse;
     }
     
-    public void setId(Integer idAdresse) {
-        this.idAdresse = idAdresse;
+    public void setId(Integer id_adresse) {
+        this.id_adresse = id_adresse;
     }
 
     public String getNomCommune() {
-        return nomCommune;
+        return nom_commune;
     }
     
-    public void setNomCommune(String nomCommune) {
-        this.nomCommune = nomCommune;
+    public void setNomCommune(String nom_commune) {
+        this.nom_commune = nom_commune;
     }
 
     public Integer getcodePostale() {
-        return codePostale;
+        return code_postale;
     }
     
-    public void setcodePostale(Integer codePostale) {
-        this.codePostale = codePostale;
+    public void setcodePostale(Integer code_postale) {
+        this.code_postale = code_postale;
     }
     
     public String getNomDepartement() {
-        return nomDepartement;
+        return nom_departement;
     }
     
-    public void setNomDepartement(String nomDepartement) {
-        this.nomDepartement = nomDepartement;
+    public void setNomDepartement(String nom_departement) {
+        this.nom_departement = nom_departement;
     }
 
     public String getNumeroDepartement() {
-        return numeroDepartement;
+        return numero_departement;
     }
     
-    public void setNumeroDepartement(String numeroDepartement) {
-        this.numeroDepartement = numeroDepartement;
+    public void setNumeroDepartement(String numero_departement) {
+        this.numero_departement = numero_departement;
     }
 
     public String getnomAdresse() {
-        return nomAdresse;
+        return nom_adresse;
     }
     
-    public void setnomAdresse(String nomAdresse) {
-        this.nomAdresse = nomAdresse;
+    public void setnomAdresse(String nom_adresse) {
+        this.nom_adresse = nom_adresse;
     }
 
     public String getComplementAdresse() {
-        return complementAdresse;
+        return complement_adresse;
     }
     
-    public void setComplementAdresse(String complementAdresse) {
-        this.complementAdresse = complementAdresse;
+    public void setComplementAdresse(String complement_adresse) {
+        this.complement_adresse = complement_adresse;
     }
 }

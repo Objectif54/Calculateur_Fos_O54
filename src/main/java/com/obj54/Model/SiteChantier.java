@@ -9,58 +9,58 @@ import javax.persistence.Id;
 public class SiteChantier {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer idSitrChantier;
-    private String nomChantier;
-    private String dateDebutChantier;
-    private String dateFinChantier;
-    private Integer primePercuParBeneficaire;
-    private Integer equipementDejaBeneficiePrimeCee;
+    private Integer id_site_chantier;
+    private String nom_chantier;
+    private String date_debut_chantier;
+    private String date_fin_chantier;
+    private Integer prime_percu_par_beneficaire;
+    private Integer equipement_deja_beneficie_prime_cee;
 
     public Integer getIdSitrChantier() {
-        return idSitrChantier;
+        return id_site_chantier;
     }
     
-    public void setIdSitrChantier(Integer idSitrChantier) {
-        this.idSitrChantier = idSitrChantier;
+    public void setIdSitrChantier(Integer id_site_chantier) {
+        this.id_site_chantier = id_site_chantier;
     }
 
     public String getNomChantier() {
-        return nomChantier;
+        return nom_chantier;
     }
     
-    public void setNomChantier(String nomChantier) {
-        this.nomChantier = nomChantier;
+    public void setNomChantier(String nom_chantier) {
+        this.nom_chantier = nom_chantier;
     }
 
     public String getDateDebutChantier() {
-        return dateDebutChantier;
+        return date_debut_chantier;
     }
     
-    public void setDateDebutChantier(String dateDebutChantier) {
-        this.dateDebutChantier = dateDebutChantier;
+    public void setDateDebutChantier(String date_debut_chantier) {
+        this.date_debut_chantier = date_debut_chantier;
     } 
 
     public String getDateFinChantier() {
-        return dateFinChantier;
+        return date_fin_chantier;
     }
     
-    public void setDateFinChantier(String dateFinChantier) {
-        this.dateFinChantier = dateFinChantier;
+    public void setDateFinChantier(String date_fin_chantier) {
+        this.date_fin_chantier = date_fin_chantier;
     } 
 
     public Integer getPrimePerçuParBeneficaire() {
-        return primePercuParBeneficaire;
+        return prime_percu_par_beneficaire;
     }
     
-    public void setPrimePerçuParBeneficaire(Integer primePercuParBeneficaire) {
-        this.primePercuParBeneficaire = primePercuParBeneficaire;
+    public void setPrimePerçuParBeneficaire(Integer prime_percu_par_beneficaire) {
+        this.prime_percu_par_beneficaire = prime_percu_par_beneficaire;
     }
 
     public Integer getEquipementDejaBeneficiePrimeCee() {
-        return equipementDejaBeneficiePrimeCee;
+        return equipement_deja_beneficie_prime_cee;
     }
     
-    public void setEquipementDejaBeneficiePrimeCee(Integer equipementDejaBeneficiePrimeCee) {
-        this.equipementDejaBeneficiePrimeCee = equipementDejaBeneficiePrimeCee;
+    public void setEquipementDejaBeneficiePrimeCee(Integer equipement_deja_beneficie_prime_cee) {
+        this.equipement_deja_beneficie_prime_cee = equipement_deja_beneficie_prime_cee;
     }
 }

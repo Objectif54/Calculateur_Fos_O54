@@ -9,22 +9,22 @@ import javax.persistence.Id;
 public class ZoneClimatique {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer idZoneClimatique;
-    private String nomZoneClimatique;
+    private Integer id_zone_climatique;
+    private String nom_zone_climatique;
 
     public Integer getidZoneClimatique() {
-        return idZoneClimatique;
+        return id_zone_climatique;
     }
     
-    public void setIdSitrChantier(Integer idZoneClimatique) {
-        this.idZoneClimatique = idZoneClimatique;
+    public void setIdSitrChantier(Integer id_zone_climatique) {
+        this.id_zone_climatique = id_zone_climatique;
     }
 
     public String getNomZoneClimatique() {
-        return nomZoneClimatique;
+        return nom_zone_climatique;
     }
     
-    public void setNomZoneClimatique(String nomZoneClimatique) {
-        this.nomZoneClimatique = nomZoneClimatique;
+    public void setNomZoneClimatique(String nom_zone_climatique) {
+        this.nom_zone_climatique = nom_zone_climatique;
     }
 } 

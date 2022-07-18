@@ -10,94 +10,94 @@ public class infofos {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
 
-  private Integer idInfoFos;
-  private String referenceFos;
-  private String nomFos;
-  private String denominationFos;
-  private String conditionDelivranceCertificatFos;
-  private int dureeVieFos;
-  private String dateDebutFos;
-  private String dateFInFos;
-  private int montantCertificat;
-  private int versionFos;
+  private Integer id_info_fos;
+  private String reference_fos;
+  private String nom_fos;
+  private String denomination_fos;
+  private String condition_delivrance_certificat_fos;
+  private int duree_vie_fos;
+  private String date_debut_fos;
+  private String datefin_fos;
+  private int montant_certificat;
+  private int version_fos;
 
   public Integer getIdInfoFos() {
-    return idInfoFos;
+    return id_info_fos;
   }
 
-  public void setIdInfoFos(Integer idInfoFos) {
-    this.idInfoFos = idInfoFos;
+  public void setIdInfoFos(Integer id_info_fos) {
+    this.id_info_fos = id_info_fos;
   }
 
   public String getReferenceFos() {
-    return referenceFos;
+    return reference_fos;
   }
 
-  public void setReferenceFos(String referenceFos) {
-    this.referenceFos = referenceFos;
+  public void setReferenceFos(String reference_fos) {
+    this.reference_fos = reference_fos;
   }
 
   public String getNomFos() {
-    return nomFos;
+    return nom_fos;
   }
 
-  public void setNomFos(String nomFos) {
-    this.nomFos = nomFos;
+  public void setNomFos(String nom_fos) {
+    this.nom_fos = nom_fos;
   }
 
   public String getDenominationFos() {
-    return denominationFos;
+    return denomination_fos;
   }
 
-  public void setDenominationFos(String denominationFos) {
-    this.denominationFos = denominationFos;
+  public void setDenominationFos(String denomination_fos) {
+    this.denomination_fos = denomination_fos;
   }
 
   public String getConditionDelivranceCertificatFos() {
-    return conditionDelivranceCertificatFos;
+    return condition_delivrance_certificat_fos;
   }
 
-  public void setConditionDelivranceCertificatFos(String conditionDelivranceCertificatFos) {
-    this.conditionDelivranceCertificatFos = conditionDelivranceCertificatFos;
+  public void setConditionDelivranceCertificatFos(String condition_delivrance_certificat_fos) {
+    this.condition_delivrance_certificat_fos = condition_delivrance_certificat_fos;
   }
 
   public Integer getDuréeVieFos() {
-    return dureeVieFos;
+    return duree_vie_fos;
   }
 
-  public void setDuréeVieFos(Integer dureeVieFos) {
-    this.dureeVieFos = dureeVieFos;
+  public void setDuréeVieFos(Integer duree_vie_fos) {
+    this.duree_vie_fos = duree_vie_fos;
   }
 
   public String getDateDebutFos() {
-    return dateDebutFos;
+    return date_debut_fos;
   }
 
-  public void setDateDebutFos(String dateDebutFos) {
-    this.dateDebutFos = dateDebutFos;
+  public void setDateDebutFos(String date_debut_fos) {
+    this.date_debut_fos = date_debut_fos;
   }
 
   public String getDateFInFos() {
-    return dateFInFos;
+    return datefin_fos;
   }
 
-  public void setDateFInFos(String dateFInFos) {
-    this.dateFInFos = dateFInFos;
+  public void setDateFInFos(String datefin_fos) {
+    this.datefin_fos = datefin_fos;
   }
 
   public Integer getMontantCertificat() {
-    return montantCertificat;
+    return montant_certificat;
   }
 
-  public void setMontantCertificat(Integer montantCertificat) {
-    this.montantCertificat = montantCertificat;
+  public void setMontantCertificat(Integer montant_certificat) {
+    this.montant_certificat = montant_certificat;
   }
 
   public Integer getVersionFos() {
-    return versionFos;
+    return version_fos;
   }
 
-  public void setversionFos(Integer versionFos) {
-    this.versionFos = versionFos;
+  public void setversionFos(Integer version_fos) {
+    this.version_fos = version_fos;
   }
 }

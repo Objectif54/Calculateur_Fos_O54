@@ -10,24 +10,23 @@ public class SecteurActivite {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     
-    private Integer idSecteurActivite;
-
-    private String nomSecteurActivite;
+    private Integer id_secteur_activite;
+    private String nom_secteur_activite;
 
     public Integer getIdSecteurActivite() {
-        return idSecteurActivite;
+        return id_secteur_activite;
     }
     
-    public void setIdSecteurActivite(Integer idSecteurActivite) {
-        this.idSecteurActivite = idSecteurActivite;
+    public void setIdSecteurActivite(Integer id_secteur_activite) {
+        this.id_secteur_activite = id_secteur_activite;
     }
     
     public String getNomSecteurActivite() {
-        return nomSecteurActivite;
+        return nom_secteur_activite;
     }
     
-    public void setNomSecteurActivite(String nomSecteurActivite) {
-        this.nomSecteurActivite = nomSecteurActivite;
+    public void setNomSecteurActivite(String nom_secteur_activite) {
+        this.nom_secteur_activite = nom_secteur_activite;
     }
     
 }

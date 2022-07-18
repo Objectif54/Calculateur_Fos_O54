@@ -7,6 +7,6 @@ import com.obj54.Model.infofos;
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
 // CRUD refers Create, Read, Update, Delete
 
-public interface InfoFos extends CrudRepository<infofos, Integer>{
+public interface InfoFosRepository extends CrudRepository<infofos, Integer>{
     
 }
