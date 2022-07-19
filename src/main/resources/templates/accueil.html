@@ -3,9 +3,39 @@
 <head> 
     <title>Getting Started: Serving Web Content</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
 </head>
 <body>
     <p th:text="'Hello, ' + ${name} + '!'" />
     <p>salut tout le monde</p>
+
+    <div class="container">
+        <table class="table table-striped">
+            <caption>your todos are</caption>
+            <thead>
+                <tr>
+                    <th>description</th>
+                    <th>target date</th>
+                    <th>is it done?</th>
+                    <th>edit</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>todo 1</td>
+                        <td>10/12/2017</td>
+                        <td>no</td>
+                        <td><a class="btn btn-warning" href="/edit-todo">edit todo</a></td>
+                        <td><a class="btn btn-warning" href="/delete-todo">delete todo</a></td>
+                    </tr>
+            </tbody>
+        </table>
+        <div>
+            <a class="btn btn-default" href="/add-todo">add a todo</a>
+
+        </div>
+    </div>
+    <script th:src = "@{/js/bootstrap.min.js}"></script>
 </body>
 </html>
