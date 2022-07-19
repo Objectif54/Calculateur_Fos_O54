@@ -3,6 +3,7 @@ package com.obj54.Controller;
 import org.hibernate.criterion.IdentifierEqExpression;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -54,6 +55,11 @@ public class MainController {
   private ZoneClimatiqueRepository zoneClimatiqueRepository;
   @Autowired
   private InfoFosRepository infoFosRepository;
+
+  @GetMapping(path="/")
+	public String accueil() {
+		return "accueil";
+	}
 
   @GetMapping(path="/allUtilisateur")
   public @ResponseBody Iterable<Utilisateur> getAllUtilisateur() {
