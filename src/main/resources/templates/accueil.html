@@ -1,41 +1,155 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head> 
-    <title>Getting Started: Serving Web Content</title> 
+    <title>Chiffrage Objectif 54</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
 </head>
 <body>
-    <p th:text="'Hello, ' + ${name} + '!'" />
-    <p>salut tout le monde</p>
 
-    <div class="container">
-        <table class="table table-striped">
-            <caption>your todos are</caption>
-            <thead>
-                <tr>
-                    <th>description</th>
-                    <th>target date</th>
-                    <th>is it done?</th>
-                    <th>edit</th>
-                    <th>delete</th>
-                </tr>
-            </thead>
-            <tbody>
-                    <tr>
-                        <td>todo 1</td>
-                        <td>10/12/2017</td>
-                        <td>no</td>
-                        <td><a class="btn btn-warning" href="/edit-todo">edit todo</a></td>
-                        <td><a class="btn btn-warning" href="/delete-todo">delete todo</a></td>
-                    </tr>
-            </tbody>
-        </table>
-        <div>
-            <a class="btn btn-default" href="/add-todo">add a todo</a>
+    <!-- barre de navigation  --> 
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comment ça marche</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SE CONNECTER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- carousel page d'accueil  -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/etude.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
     </div>
+
+    <!-- section comment ça marche ?  -->
+    <div>
+        <div>
+            <div>
+                <img src="/" height="5em" width="5em" alt="...">
+                <p>Connecter-vous</p>
+            </div>
+            <div>
+                <img src="/img/tertiaire.png" class="" alt="...">
+                <p>Estimation CEE</p>
+            </div>
+            <div>
+                <img src="/img/tertiaire.png" class="" alt="...">
+                <p>Souscrire un contrat</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Company name</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px"
+                            />
+                        <p>
+                        Here you can use rows and columns to organize your footer
+                        content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px"
+                            />
+                        <p>
+                        <a href="#!" class="text-white">MDBootstrap</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-white">MDWordPress</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-white">BrandFlow</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-white">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px"
+                            />
+                        <p>
+                        <a href="#!" class="text-white">Your Account</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-white">Become an Affiliate</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-white">Shipping Rates</a>
+                        </p>
+                        <p>
+                        <a href="#!" class="text-white">Help</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px"
+                            />
+                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center text-md-start mt-5">
+                <a href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    </footer>
     <script th:src = "@{/js/bootstrap.min.js}"></script>
 </body>
 </html>
