@@ -33,8 +33,45 @@ body {
 }
 .logo-reseau-sociaux {
     display: flex;
-    justify-content: center;
 }
 #logo-footer {
     height: 6em;
+}
+.container.text-center.text-md-start.mt-5.copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    border-top: solid white ;
+}
+.text-footer {
+    text-decoration: none;
+}
+/*carousel page d'accueil */
+#carouselExampleSlidesOnly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-inner {
+    position: relative;
+    z-index: 1;
+    height: 21em; 
+    opacity: 40%;  
+}
+.carousel-text {
+    position: absolute;
+    z-index: 2;
+    bottom: auto;
+    font-size: 4em;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(63,63,63);
+}
+/*comment ça marche page d'accueil */
+.container.text-center.comment-ca-marche {
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-card{
+    height: 23em;
 }
