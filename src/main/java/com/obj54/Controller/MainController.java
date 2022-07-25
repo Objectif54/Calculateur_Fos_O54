@@ -1,13 +1,9 @@
 package com.obj54.Controller;
 
-import org.hibernate.criterion.IdentifierEqExpression;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.obj54.Model.Utilisateur;
@@ -33,7 +29,7 @@ import com.obj54.Repository.InfoFosRepository;
 
 
 @Controller // This means that this class is a Controller
-@RequestMapping(path="/demo") // This means URL's start with /demo (after Application path)
+@RequestMapping(path="/home") // This means URL's start with /demo (after Application path)
 public class MainController {
   @Autowired
   private UtilisateurRepository utilisateurRepository;
@@ -55,6 +51,11 @@ public class MainController {
   private ZoneClimatiqueRepository zoneClimatiqueRepository;
   @Autowired
   private InfoFosRepository infoFosRepository;
+
+  @GetMapping(path="/login")
+  public String home() {
+		return "login";
+	}
 
   @GetMapping(path="/")
 	public String accueil() {
