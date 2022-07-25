@@ -1,15 +1,10 @@
 package com.obj54.Controller;
 
-import org.hibernate.criterion.IdentifierEqExpression;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 
 import com.obj54.Model.Utilisateur;
 import com.obj54.Model.Adresse;
@@ -57,14 +52,14 @@ public class MainController {
   @Autowired
   private InfoFosRepository infoFosRepository;
 
-  @GetMapping(path="/home")
+  @GetMapping(path="/login")
   public String home() {
-		return "home";
+		return "login";
 	}
 
-  @GetMapping(path="/login")
-  public String login() {
-		return "login";
+  @GetMapping(path="/")
+	public String accueil() {
+		return "accueil";
 	}
 
   @GetMapping(path="/allUtilisateur")

@@ -1,0 +1,40 @@
+/*page d'accueil style*/
+body {
+    font-family: Gotham Rounded Medium,sans-serif;
+}
+/*barre de navigation */
+.navbar.navbar-expand-lg.bg-light {
+    min-height: 6em;
+}
+#navbarSupportedContent {
+    justify-content: end;
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    margin-right: 15em!important;
+}
+#logo-nav{
+    height: 2em;
+    width: auto;
+}
+.nav-item.obj-boutton{
+    background: linear-gradient(to right, #91c24b, #199ac6);
+    border-radius: 2em;
+}
+.nav-item.obj-boutton .nav-link {
+    color: white;
+}
+/*footer */
+.text-center.text-lg-start.text-white {
+    background: linear-gradient(to right, #91c24b, #199ac6);
+}
+.container.text-center.text-md-start.mt-5 {
+    padding-top: 2em;
+    margin-top: 0em!important;
+}
+.logo-reseau-sociaux {
+    display: flex;
+    justify-content: center;
+}
+#logo-footer {
+    height: 6em;
+}
