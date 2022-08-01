@@ -3,8 +3,32 @@
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
     <head>
         <title>Spring Security Example </title>
+
+        <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link th:href = "@{/css/style.css}" rel="stylesheet" href="../static/css/style.css">
+        <link th:href = "@{/css/GothamRoundedMedium.otf}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <!-- barre de navigation  --> 
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/demo/"><img src="/img/logoo54horizontale.png" id="logo-nav" alt="logo objectif 54"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/demo/">Accueil</a>
+                        </li>
+                        <li class="nav-item obj-boutton">
+                            <a class="nav-link" href="#">SE CONNECTER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div th:if="${param.error}">
             Invalid username and password.
         </div>
@@ -16,5 +40,67 @@
             <div><label> Password: <input type="password" name="password"/> </label></div>
             <div><input type="submit" value="Sign In"/></div>
         </form>
+        <!-- footer  -->
+        <footer class="text-center text-lg-start text-white">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                        
+                                    <img src="/img/LogoO54vertical.png" id="logo-footer" alt="...">
+                                    <img src="/img/LogoISO9001.svg" class="" alt="...">
+                                
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold">Conditions générales</h6>
+                            <hr
+                                class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px"
+                                />
+                            <p>
+                                <a href="https://www.objectif54.com/conditions-generales-d-utilisation" class="text-white text-footer">Conditions générales d’utilisation</a>
+                            </p>
+                            <p>
+                                <a href="https://www.objectif54.com/mentions-legales" class="text-white text-footer">Mentions légales</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr
+                                class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px"
+                                />
+                            <p> 
+                                <a href="https://www.objectif54.com/nous-contacter" target="_blank" class="text-white me-4 text-footer">
+                                    <i class="fas fa-envelope mr-3"></i> Nous Contacter
+                                </a>
+                            </p>
+                            <p> 
+                                <a href="" class="text-white me-4 text-footer">
+                                    <i class="fas fa-phone mr-3"></i> + 04 67 31 81 93
+                                </a>
+                            </p>
+                            <div class="logo-reseau-sociaux">
+                                <a href="https://fr-fr.facebook.com/OBJECTIF54/" target="_blank" class="text-white me-4">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                </a>
+                                <a href="https://twitter.com/objectif_54?lang=fr" target="_blank" class="text-white me-4">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/objectif-54/" target="_blank" class="text-white me-4">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center text-md-start mt-5 copyright">
+                    <p>OBJECTIF 54  —  Tous droits réservés  —  ©2022</p>
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        </footer>
+        <script th:src = "@{/js/bootstrap.min.js}"></script>
     </body>
 </html>
